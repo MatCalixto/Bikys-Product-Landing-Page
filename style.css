@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=Fredoka+One&family=Montserrat:wght@300;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+/* header */
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+    position: fixed;
+    width:100%;
+}
+#logo {
+    padding-left: 5vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+#header-img {
+    width: 4em;
+}
+#logoTitle {
+    color: black;
+}
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    padding-right: 5vw;
+}
+.nav-link {
+    color: black;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.3em;
+}
+.nav-link:hover {
+    color:#396674;
+}
+/* main */
+#main {
+    display: flex;
+    flex-direction: column;
+}
+/* first section/div */
+#formSection {
+    background-image: url("https://cdn.discordapp.com/attachments/953366989634699314/960529581310377984/bikingBackground.png");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 40vw;
+    gap: 1em;
+}
+#slogan {
+    font-size: 2.4em;
+}
+#info {
+    font-weight: 200;
+    font-size: 1.5em;
+}
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+#submit {
+    font-size: 1.5em;
+    color: white;
+    background-color: #203A42;
+    cursor: pointer;
+    border-radius: 2em;
+    border: none;
+    width: 10em;
+    height: 10vh;
+    transition: all 0.3s ease-in-out;
+}
+#submit:hover {
+    background-color: #396674;
+}
+/* products section */
+#products {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.product {
+    margin-top: 2.5em;
+    background: linear-gradient(to top, rgb(243, 243, 243) 0%, white 70%, #203A42 70%, #203A42 100%);
+    width: 25vw;
+    height: 50vh;
+    border-radius: 1em;
+    border: #203A42 0.1em solid;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0.6em;
+}
+.productName {
+    color: white;
+}
+.productBuy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2em;
+}
+#description {
+    font-size: 0.5em;
+}
+.btn {
+    width: 15vw;
+    height: 10vh;
+    border: none;
+    border-radius: 3em;
+    background-color:#203A42;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: 0.5em;
+}
+.btn:hover {
+    background-color:#396674;
+}
+/* video section */
+#videoSection {
+    padding: 10vh 5vw 0 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    gap: 1em;
+}
+#videoTitle {
+    font-size: 2em;
+}
+#footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #203A42;
+    height: 40vh;
+    color: white;
+    justify-content: space-between;
+}
+#copyright {
+    text-align: center;
+    width: 100%;
+    color: black;
+    background-color: white;
+}
+#contact {
+    padding: 3vh 2vw 3vh 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+@media only screen and (max-width:700px) {
+    #formSection {
+        padding: 5vw;
+    }
+    #videoSection {
+        height: 30vh;
+    }
+    #nav-bar {
+        display: none;
+    }
+    #products {
+        display: flex;
+        flex-direction: column;
+    }
+    .product {
+        width: 70vw;
+    }
+    .btn {
+        width: 50vw;
+    }
+}
